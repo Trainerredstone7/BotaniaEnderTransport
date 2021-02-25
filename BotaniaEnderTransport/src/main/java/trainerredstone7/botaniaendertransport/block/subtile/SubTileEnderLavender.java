@@ -6,8 +6,6 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.item.ItemEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.server.MinecraftServer;
-import net.minecraft.tileentity.TileEntityType;
 import net.minecraft.util.RegistryKey;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
@@ -99,10 +97,9 @@ public class SubTileEnderLavender extends TileEntityFunctionalFlower {
 		return true;
 	}
 	
-	//Change this to a more suitable color later
 	@Override
 	public int getColor() {
-		return 0x98BCFF;
+		return 0xB544E6;
 	}
 	
 	@Override

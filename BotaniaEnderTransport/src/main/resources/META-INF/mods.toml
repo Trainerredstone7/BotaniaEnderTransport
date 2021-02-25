@@ -9,9 +9,9 @@ modLoader="javafml" #mandatory
 loaderVersion="[35,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
 # The license for you mod. This is mandatory metadata and allows for easier comprehension of your redistributive properties.
 # Review your options at https://choosealicense.com/. All rights reserved is the default copyright stance, and is thus the default here.
-license="All rights reserved"
+license="MIT License"
 # A URL to refer people to when problems occur with this mod
-#issueTrackerURL="https://change.me.to.your.issue.tracker.example.invalid/" #optional
+issueTrackerURL="https://github.com/Trainerredstone7/BotaniaEnderTransport/issues" #optional
 # A list of mods - how many allowed here is determined by the individual mod loader
 [[mods]] #mandatory
 # The modid of the mod
@@ -29,11 +29,11 @@ displayName="Botania Ender Transport" #mandatory
 # A file name (in the root of the mod JAR) containing a logo for display
 #logoFile="examplemod.png" #optional
 # A text field displayed in the mod UI
-#credits="Thanks for this example mod goes to Java" #optional
+credits="Thanks to abused_master, whose code for BFF helped me figure out how to add functional flora, and to Vazkii for making Botania" #optional
 # A text field displayed in the mod UI
 authors="TrainerRedstone7" #optional
 # The description text for the mod (multi line!) (#mandatory)
-description="Adds a flower that allows for item transport from the end to the overworld and vice versa."
+description="Adds a functional flower that allows for item transport from the end to the overworld and vice versa."
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
 [[dependencies.botaniaendertransport]] #optional
     # the modid of the dependency
