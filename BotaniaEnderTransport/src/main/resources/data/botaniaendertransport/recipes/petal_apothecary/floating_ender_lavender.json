@@ -1,0 +1,14 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"tag": "botania:floating_flowers"
+		},
+		{
+			"item": "botaniaendertransport:ender_lavender"
+		}
+	],
+	"result": {
+		"item": "botaniaendertransport:floating_ender_lavender"
+	}
+}

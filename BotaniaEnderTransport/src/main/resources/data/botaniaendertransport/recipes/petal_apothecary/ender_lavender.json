@@ -1,0 +1,32 @@
+{
+	"type": "botania:petal_apothecary",
+	"output": {
+		"item": "botaniaendertransport:ender_lavender"
+	},
+	"ingredients": [
+		{
+			"tag": "botania:petals/purple"
+		},
+		{
+			"tag": "botania:petals/purple"
+		},
+		{
+			"tag": "botania:petals/magenta"
+		},
+		{
+			"tag": "botania:petals/magenta"
+		},
+		{
+			"tag": "botania:runes/summer"
+		},
+		{
+			"tag": "botania:runes/winter"
+		},
+		{
+			"item": "botania:redstone_root"
+		},
+		{
+			"item": "botania:pixie_dust"
+		}
+	]
+}
