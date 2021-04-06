@@ -33,7 +33,6 @@ public class SubTileEnderLavender extends TileEntityFunctionalFlower {
 	@Override
 	public void tickFlower() {
 		super.tickFlower();
-
 		if (!getWorld().isRemote) {
 			ServerWorld destination;
 			RegistryKey<World> worldKey = getWorld().getDimensionKey();

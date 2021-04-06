@@ -22,16 +22,16 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import trainerredstone7.botaniaendertransport.block.BlockSpecialFlower;
 import trainerredstone7.botaniaendertransport.block.subtile.SubTileEnderLavender;
+import trainerredstone7.botaniaendertransport.item.ItemBlockEnderLavender;
 import vazkii.botania.client.render.tile.RenderTileSpecialFlower;
 import vazkii.botania.common.block.BlockFloatingSpecialFlower;
-import vazkii.botania.common.item.block.ItemBlockSpecialFlower;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod("botaniaendertransport")
 public class BotaniaEnderTransport
 {
     // Directly reference a log4j logger.
-    private static final Logger LOGGER = LogManager.getLogger();
+    public static final Logger LOGGER = LogManager.getLogger();
     public static final String MODID = "botaniaendertransport";
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MODID);
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
@@ -40,8 +40,8 @@ public class BotaniaEnderTransport
     public static final RegistryObject<Block> ENDER_LAVENDER_BLOCK = BLOCKS.register("ender_lavender", () -> new BlockSpecialFlower(Effects.LEVITATION, 30, AbstractBlock.Properties.from(Blocks.POPPY), SubTileEnderLavender::new));
     public static final RegistryObject<Block> ENDER_LAVENDER_FLOATING_BLOCK = BLOCKS.register("floating_ender_lavender", () -> new BlockFloatingSpecialFlower(vazkii.botania.common.block.ModBlocks.FLOATING_PROPS, SubTileEnderLavender::new));
     public static final RegistryObject<TileEntityType<SubTileEnderLavender>> ENDER_LAVENDER_TILE = TILE_ENTITIES.register("ender_lavender_tile", () -> TileEntityType.Builder.create(SubTileEnderLavender::new, ENDER_LAVENDER_BLOCK.get(), ENDER_LAVENDER_FLOATING_BLOCK.get()).build(null));
-    public static final RegistryObject<BlockItem> ENDER_LAVENDER_ITEM = ITEMS.register("ender_lavender", () -> new ItemBlockSpecialFlower(ENDER_LAVENDER_BLOCK.get(), vazkii.botania.common.item.ModItems.defaultBuilder()));
-    public static final RegistryObject<BlockItem> ENDER_LAVENDER_FLOATING_ITEM = ITEMS.register("floating_ender_lavender", () -> new ItemBlockSpecialFlower(ENDER_LAVENDER_FLOATING_BLOCK.get(), vazkii.botania.common.item.ModItems.defaultBuilder()));
+    public static final RegistryObject<BlockItem> ENDER_LAVENDER_ITEM = ITEMS.register("ender_lavender", () -> new ItemBlockEnderLavender(ENDER_LAVENDER_BLOCK.get(), vazkii.botania.common.item.ModItems.defaultBuilder()));
+    public static final RegistryObject<BlockItem> ENDER_LAVENDER_FLOATING_ITEM = ITEMS.register("floating_ender_lavender", () -> new ItemBlockEnderLavender(ENDER_LAVENDER_FLOATING_BLOCK.get(), vazkii.botania.common.item.ModItems.defaultBuilder()));
     
     public BotaniaEnderTransport() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);

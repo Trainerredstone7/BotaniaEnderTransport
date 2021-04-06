@@ -7,15 +7,15 @@
 	"pages": [
 		{
 			"type": "text",
-			"text": "At times it may be convenient to transport items between the Overworld and the End. Unfortunately, when items pass through End Portals, they always appear at the origin of the destination world, which may be impractical for automation. The $(item)Ender Lavender$(0), a close relative of the $(item)Spectranthemum$(0), warps nearby items to the End when placed in the Overworld and"
+			"text": "At times it may be convenient to transport items between the Overworld and the End. Unfortunately, when items pass through End Portals, they always appear at the origin of the destination world, which may be impractical for automation. The $(item)Ender Lavender$(0), a close relative of the $(l:functional_flowers/spectranthemum)$(item)Spectranthemum$(0)$(/l), warps nearby items to the End when placed in the Overworld and"
 		},
 		{
 			"type": "text",
-			"text": "to the Overworld when placed in the End. Items will retain their coordinates after teleportation, so it would be wise to place a platform and means of item collection (perhaps a $(item)Hopperhock$(0) and chest) at their destination. Like the $(item)Spectranthemum$(0), the $(item)Ender Lavender$(0) cannot warp $(thing)Mana$(0)-containing items and won't send items to unloaded chunks, but it has no restrictions on multiple teleportations."
+			"text": "to the Overworld when placed in the End. Items will retain their coordinates after teleportation, so it would be wise to place a platform and means of item collection (perhaps a $(l:functional_flowers/hopperhock)$(item)Hopperhock$(0)$(/l) and chest) at their destination. Like the $(l:functional_flowers/spectranthemum)$(item)Spectranthemum$(0)$(/l), the $(item)Ender Lavender$(0) cannot warp $(thing)Mana$(0)-containing items and won't send items to unloaded chunks, but it has no restrictions on multiple teleportations."
 		},
 		{
 		"type": "botania:petal_apothecary",
-		"text": "$(o)Is this an isekai?$()",
+		"text": "$(o)(n+1)spooky(n+3)me.$()",
 		"recipe": "botaniaendertransport:petal_apothecary/ender_lavender"
 		}
 	]
